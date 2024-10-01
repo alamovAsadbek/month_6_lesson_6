@@ -17,7 +17,8 @@
             </div>
             <div class="input-group ml-auto d-none d-lg-flex" style="width: 100%; max-width: 300px;">
                 <form action="{% url 'news:list' %}">
-                    <input value="{{ request.GET.q }}" name="q" type="text" class="form-control border-0" placeholder="Keyword">
+                    <input value="{{ request.GET.q }}" name="q" type="text" class="form-control border-0"
+                           placeholder="Search news...">
                 </form>
 
                 <div class="input-group-append">
