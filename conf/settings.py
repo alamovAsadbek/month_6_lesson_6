@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     #  apps
     'ckeditor',
     'ckeditor_uploader',
-    'django_ckeditor_5'
 
     # local apps
     'news',
