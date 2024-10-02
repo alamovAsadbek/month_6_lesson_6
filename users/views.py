@@ -1,12 +1,13 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
 
 def register_view(request):
-    return HttpResponse("Register Page")
+    return render(request, "auth/register.html")
 
 
 def login_view(request):
-    return HttpResponse("Login Page")
+    return render(request, "auth/login.html")
 
 
 def logout_view(request):
