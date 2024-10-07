@@ -1,10 +1,11 @@
-from django.db import models
-from slugify import slugify
 from ckeditor_uploader.fields import RichTextUploadingField
+from django.db import models
+from django.utils.translation import gettext_lazy as _
+from slugify import slugify
 
 
 class CategoryModel(models.Model):
-    name = models.CharField(max_length=255, verbose_name="Category name", unique=True)
+    name = models.CharField(max_length=255, verbose_name=_("Category name"), unique=True)
 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
