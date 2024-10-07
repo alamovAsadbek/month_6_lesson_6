@@ -1,5 +1,4 @@
-from modeltranslation.decorators import register
-from modeltranslation.translator import TranslationOptions
+from modeltranslation.translator import TranslationOptions, register
 
 from news.models import CategoryModel
 
